@@ -11,7 +11,7 @@
 
     <!--Sezione titolo-->
   <header>
-      <h1>calcola il prezzo del tuo biglietto</h1>
+      <h1 class="upper">calcola il prezzo del tuo biglietto</h1>
   </header>
    
 
@@ -28,7 +28,7 @@
 
                 <span class="ms_mb-15 ms_purple-text">Nome Cognome</span>
 
-                <input type="text" class="ms_input-text" placeholder="Inserisci il tuo nome" id="name" > 
+                <input type="text" class="ms_input-text ms_p-5 " placeholder="Inserisci il tuo nome" id="name" > 
 
             </div>
             
@@ -36,7 +36,7 @@
 
                 <span class="ms_mb-15 ms_purple-text">km da percorrere</span>
 
-                <input type="number" class="ms_input-text" placeholder="Inserisci i km" id="km" min="1"> 
+                <input type="number" class="ms_input-text ms_p-5" placeholder="Inserisci i km" id="km" min="1"> 
 
             </div>
             
@@ -44,7 +44,7 @@
 
                 <span class="ms_mb-15 ms_purple-text">Fascia d'età</span>
 
-                <select id="age" class="ms_input-text">
+                <select id="age" class="ms_input-text ms_p-5">
                 <option value="">Seleziona fascia d'età</option>
                 <option value="under-18">Minorenne</option>
                 <option value="over-18">Maggiorenne</option>
@@ -69,15 +69,15 @@
     <!--Ticket-->
 
     <div class="generated-ticket">
-        <h2 class="ms_mt-15">il tuo biglietto</h2>
+        <h2 class="ms_mt-15 upper">il tuo biglietto</h2>
 
         <div class="ticket">
             <div class="ms_p-15">
-                <h3>dettaglio passeggeri</h3>
+                <h3 class="upper">dettaglio passeggeri</h3>
                 <div class="ticket-info">
                     <div class="col-big ms_p-15">
-                        <h4>nome del passeggero</h3>
-                        <span id="name-ticket"></span>
+                        <h4 class="upper">nome del passeggero</h4>
+                        <span id="name-ticket" class="bold"></span>
                     </div>
 
                     <div class="col-sm ms_p-15">
