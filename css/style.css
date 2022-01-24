@@ -13,6 +13,12 @@ html{
 .ms_mb-15{
     margin-bottom: 15px ;
 }
+.ms_mt-15{
+    margin-top: 15px;
+}
+.ms_mb-50{
+    margin-bottom: 50px;
+}
 .ms_mx-10{
     margin: 0px 10px;
 }
@@ -20,6 +26,9 @@ html{
 /*padding*/
 .ms_p-5{
     padding: 5px;
+}
+.ms_p-15{
+    padding: 15px;
 }
 /*text-color*/
 .ms_purple-text{
@@ -72,4 +81,40 @@ form{
     text-align: center;
 }
 
+/*Ticket*/
+
+ h2{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.ticket h3{
+    text-transform: uppercase; 
+}
+
+.ticket{
+    background-color: #fff;
+    
+}
+
+.col-big{
+    background-color: #808080;
+    width: 25%;
+    
+}
+.col-sm{
+    width: 18.75%;
+    border-top: solid 1px #808080;
+    border-bottom: solid 1px #808080;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ticket-info{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
 
