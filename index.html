@@ -22,13 +22,13 @@
     <!--Form-->
     <div class="dati-utente">
 
-        <form>
+        <form id="myForm">
             
             <div class="name-box ms_input-form">
 
                 <span class="ms_mb-15 ms_purple-text">Nome Cognome</span>
 
-                <input type="text" id="name" > 
+                <input type="text" class="ms_input-text" placeholder="Inserisci il tuo nome" id="name" > 
 
             </div>
             
@@ -36,7 +36,7 @@
 
                 <span class="ms_mb-15 ms_purple-text">km da percorrere</span>
 
-                <input type="number" id="km" > 
+                <input type="number" class="ms_input-text" placeholder="Inserisci i km" id="km" min="1"> 
 
             </div>
             
@@ -44,7 +44,7 @@
 
                 <span class="ms_mb-15 ms_purple-text">Fascia d'età</span>
 
-                <select id="age">
+                <select id="age" class="ms_input-text">
                 <option value="">Seleziona fascia d'età</option>
                 <option value="under-18">Minorenne</option>
                 <option value="over-18">Maggiorenne</option>
@@ -58,8 +58,8 @@
 
         <div class="button-box">
 
-            <button id="genera" class="ms_purple-text ms_mx-10">Genera</button>
-            <button id="Annulla" class="ms_purple-text ms_mx-10">Annulla</button>
+            <button id="genera" class="ms_purple-text ms_mx-10 ms_p-5">Genera</button>
+            <button id="annulla" class="ms_purple-text ms_mx-10 ms_p-5">Annulla</button>
              
         </div>
 
@@ -69,6 +69,7 @@
     <!--Biglietto-->
 
     <div>
+
 
     </div>
 

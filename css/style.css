@@ -16,6 +16,11 @@ html{
 .ms_mx-10{
     margin: 0px 10px;
 }
+
+/*padding*/
+.ms_p-5{
+    padding: 5px;
+}
 /*text-color*/
 .ms_purple-text{
     color: #b91450;
@@ -63,5 +68,8 @@ form{
     padding: 0px 30px;
 }
 
+.ms_input-text{
+    text-align: center;
+}
 
 
