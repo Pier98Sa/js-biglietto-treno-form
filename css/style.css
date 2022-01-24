@@ -83,6 +83,9 @@ form{
 
 /*Ticket*/
 
+.generated-ticket{
+    display: none;
+}
  h2{
     text-align: center;
     color: #fff;
@@ -118,3 +121,6 @@ form{
     height: 100px;
 }
 
+.active{
+    display: block;
+}
