@@ -4,9 +4,9 @@ const sconto20 = 0.8;
 const sconto40 = 0.6;
 
 //variabili immesse dall'utente
-let name = document.getElementById("name");
-let km = document.getElementById("km");
-let age = document.getElementById("age");
+let name = document.getElementById("name").value;
+let km = document.getElementById("km").value;
+let age = document.getElementById("age").value;
 
 console.log(name);
 console.log(km);
