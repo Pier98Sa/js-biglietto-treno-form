@@ -24,7 +24,7 @@ buttonGenera.addEventListener('click',
         let prezzoBiglietto;
 
         //funzioni per la creazione di numeri randomici
-        document.getElementById('train-car').innerHTML = (Math.floor(Math.random() * 10));
+        document.getElementById('train-car').innerHTML = (Math.floor(Math.random() * 9)+1);
         document.getElementById('cp-code').innerHTML = (Math.floor(Math.random() * 9999)+ 90000);
 
         
@@ -32,16 +32,19 @@ buttonGenera.addEventListener('click',
             // calcolo costo del biglietto
             prezzoBiglietto = km * prezzoKm * sconto20;
             document.getElementById('ticket-price').innerHTML = (prezzoBiglietto.toFixed(2)) + "\u20AC";
+            document.getElementById('ticket-type').innerHTML = 'Biglietto scontato -20%';
         } else if (age == "over-65"){
             // calcolo costo del biglietto
             prezzoBiglietto = km * prezzoKm * sconto40;
-            document.getElementById('ticket-price').innerHTML = (prezzoBiglietto.toFixed(2)) + "\u20AC";
+            document.getElementById('ticket-price').innerHTML = (prezzoBiglietto.toFixed(2)) + "\u20AC"
+            document.getElementById('ticket-type').innerHTML = 'Biglietto scontato -40%';
         }else if (age == ""){
             alert("Fascia d'età non valida")
         }else {
             // calcolo costo del biglietto
             prezzoBiglietto = km * prezzoKm ;
            document.getElementById('ticket-price').innerHTML = (prezzoBiglietto.toFixed(2)) + "\u20AC";
+           document.getElementById('ticket-type').innerHTML = 'Biglietto standard';
 
         }
 
