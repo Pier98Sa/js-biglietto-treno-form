@@ -135,7 +135,7 @@ h2{
     justify-content: space-between;
     height: 100px;
 }
-
+/*classe aggiunta con JS */
 .active{
     display: block;
 }

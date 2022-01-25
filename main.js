@@ -14,6 +14,7 @@ buttonGenera.addEventListener('click',
         
         //variabili immesse dall'utente
         let name = document.getElementById("name").value;
+        //stampa del nome 
         document.getElementById('name-ticket').innerHTML = name;
                 
         let km = document.getElementById("km").value;
@@ -31,11 +32,13 @@ buttonGenera.addEventListener('click',
         if (age == "under-18") {
             // calcolo costo del biglietto
             prezzoBiglietto = km * prezzoKm * sconto20;
+            //stampa del prezzo e dell'offerta
             document.getElementById('ticket-price').innerHTML = (prezzoBiglietto.toFixed(2)) + "\u20AC";
             document.getElementById('ticket-type').innerHTML = 'Biglietto scontato -20%';
         } else if (age == "over-65"){
             // calcolo costo del biglietto
             prezzoBiglietto = km * prezzoKm * sconto40;
+            //stampa del prezzo e dell'offerta
             document.getElementById('ticket-price').innerHTML = (prezzoBiglietto.toFixed(2)) + "\u20AC"
             document.getElementById('ticket-type').innerHTML = 'Biglietto scontato -40%';
         }else if (age == ""){
@@ -43,6 +46,7 @@ buttonGenera.addEventListener('click',
         }else {
             // calcolo costo del biglietto
             prezzoBiglietto = km * prezzoKm ;
+            //stampa del prezzo e dell'offerta
            document.getElementById('ticket-price').innerHTML = (prezzoBiglietto.toFixed(2)) + "\u20AC";
            document.getElementById('ticket-type').innerHTML = 'Biglietto standard';
 
