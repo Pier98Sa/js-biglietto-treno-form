@@ -13,12 +13,8 @@ buttonGenera.addEventListener('click',
     function() {
         
         //variabili immesse dall'utente
-        let name = document.getElementById("name").value;
-        //stampa del nome 
-        document.getElementById('name-ticket').innerHTML = name;
-                
+        let name = document.getElementById("name").value;       
         let km = document.getElementById("km").value;
-
         let age = document.getElementById("age").value;
         
         //variabile inizializzata fuori dal ciclo if
@@ -51,8 +47,21 @@ buttonGenera.addEventListener('click',
             offerta = "Biglietto standard";
         }
 
-        document.getElementById('ticket-price').innerHTML = (prezzoBiglietto.toFixed(2)) + "\u20AC";
+        //stampa del nome 
+        document.getElementById('name-ticket').innerHTML = name;
+
+        //stampa della tipologia d'offerta
         document.getElementById('ticket-type').innerHTML = offerta;
+
+        //codice della carrozza numero tra 1 e 9
+        document.getElementById('train-car').innerHTML = (Math.floor(Math.random() * 9)+1);
+
+        //codice CP numero tra 90000 e 99999
+        document.getElementById('cp-code').innerHTML = (Math.floor(Math.random() * 9999)+ 90000);
+
+        //stampa del prezzo del biglietto
+        document.getElementById('ticket-price').innerHTML = (prezzoBiglietto.toFixed(2)) + "\u20AC";
+        
         //aggiunta della classe active per mostrare il risultato
         const htmlGeneratedTicket = document.querySelector('.generated-ticket');
         htmlGeneratedTicket.classList.add('active');
@@ -62,6 +71,7 @@ buttonGenera.addEventListener('click',
 //click su annulla
 buttonAnnulla.addEventListener('click',    
     function() {
+        //reset del form
         document.getElementById("myForm").reset();
         //rimozione della classe active per resettare la pagina
         const htmlGeneratedTicket = document.querySelector('.generated-ticket');
