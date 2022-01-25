@@ -54,6 +54,16 @@ h1{
 }
 
 /*form*/
+
+#myForm input:focus{
+    background-color: #b91450;
+    color: #fff;
+}
+
+#myForm input:focus::placeholder {
+    color: #fff;
+}
+
 .dati-utente{
     background-color: #fff;
     border-radius: 10px;
@@ -84,7 +94,6 @@ form{
 .ms_input-text{
     text-align: center;
 }
-
 
 
 input { 
@@ -139,3 +148,4 @@ h2{
 .active{
     display: block;
 }
+
